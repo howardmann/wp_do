@@ -27,9 +27,9 @@ if (file_exists(dirname(__FILE__) . '/local.php')) {
   define('DB_HOST', 'localhost');
 } else {
   // prod DB settings
-  define('DB_NAME', 'tbd');
-  define('DB_USER', 'tbd');
-  define('DB_PASSWORD', 'tbd');
+  define('DB_NAME', 'do_forge_wp');
+  define('DB_USER', 'root');
+  define('DB_PASSWORD', 'root');
   define('DB_HOST', 'localhost');
 }
 
