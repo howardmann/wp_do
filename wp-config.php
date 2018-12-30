@@ -29,7 +29,7 @@ if (file_exists(dirname(__FILE__) . '/local.php')) {
   // prod DB settings
   define('DB_NAME', 'do_forge_wp');
   define('DB_USER', 'forge');
-  define('DB_PASSWORD', 'MvJvENED3nNt7dKFsL4M');
+  define('DB_PASSWORD', $_ENV['DB_PASSWORD']);
   define('DB_HOST', 'localhost');
 }
 
