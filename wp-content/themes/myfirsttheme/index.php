@@ -1,1 +1,7 @@
-<h1>MOOOOOOO</h1>
+<?php
+/**
+ * my first theme
+**/
+?>
+
+<h1>Moo</h1>
