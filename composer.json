@@ -1,0 +1,10 @@
+{
+  "name": "ericlbarnes/wp",
+  "require": {
+    "vlucas/phpdotenv": "^2.2"
+  },
+  "authors": [{
+    "name": "Eric L. Barnes",
+    "email": "me@mysite.com"
+  }]
+}

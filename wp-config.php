@@ -17,11 +17,13 @@
  *
  * @package WordPress
  */
+require_once(__DIR__ . '/./vendor/autoload.php');
+(new \Dotenv\Dotenv(__DIR__.'/./'))->load();
 
 // ** MySQL settings - You can get this info from your web host ** //
 if (file_exists(dirname(__FILE__) . '/local.php')) {
   // localhost DB settings
-  define('DB_NAME', 'wp_do');
+  define('DB_NAME', getenv('DB_NAME'));
   define('DB_USER', 'howie@localhost');
   define('DB_PASSWORD', 'chicken');
   define('DB_HOST', 'localhost');
