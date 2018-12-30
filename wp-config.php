@@ -21,19 +21,10 @@ require_once(__DIR__ . '/./vendor/autoload.php');
 (new \Dotenv\Dotenv(__DIR__.'/./'))->load();
 
 // ** MySQL settings - You can get this info from your web host ** //
-if (file_exists(dirname(__FILE__) . '/local.php')) {
-  // localhost DB settings
-  define('DB_NAME', getenv('DB_NAME'));
-  define('DB_USER', 'howie@localhost');
-  define('DB_PASSWORD', 'chicken');
-  define('DB_HOST', 'localhost');
-} else {
-  // prod DB settings
-  define('DB_NAME', 'do_forge_wp');
-  define('DB_USER', 'forge');
-  define('DB_PASSWORD', getenv('DB_PASSWORD'));
-  define('DB_HOST', 'localhost');
-}
+define('DB_NAME', getenv('DB_NAME'));
+define('DB_USER', getenv('DB_USER'));
+define('DB_PASSWORD', getenv('DB_PASSWORD'));
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
